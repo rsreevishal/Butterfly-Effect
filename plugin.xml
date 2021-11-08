@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin
+   id="com.rsreevishal.ButterflyEffect"
+   name="ButterflyEffect Plugin"
+   version="1.0.0"
+   provider-name="Sree Vishal R">
+<requires>
+   <import plugin="org.eclipse.core.runtime"/>
+   <import plugin="org.eclipse.core.resources"/>
+   <import plugin="org.eclipse.ui"/>
+</requires>
+<extension
+      id="com.rsreevishal.ButterflyEffect"
+      name="Butterfly Effect"
+      point="org.eclipse.ui.views">
+   <view
+         name="Butterfly Effect"
+         icon="icons/butterfly.png"
+         class="butterflyeffect.ui.ButterflyEffectView"
+         id="com.rsreevishal.ButterflyEffect.butterflyeffect.ui.ButterflyEffectView">
+   </view>
+</extension>
+
+</plugin>
