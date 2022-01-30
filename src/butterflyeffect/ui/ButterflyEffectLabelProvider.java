@@ -49,7 +49,7 @@ public class ButterflyEffectLabelProvider extends ColumnLabelProvider {
 				return "Effect";
 			} else {
 				String name = ((ButterflyEffect)element).getName();
-				return name.substring(name.lastIndexOf('/') + 1);
+				return String.format("%s (%d) - %s", name.substring(name.lastIndexOf('/') + 1), ((ButterflyEffect)element).getLine(), ((ButterflyEffect)element).getDescription());
 			}
 		} else {
 			throw unknownElement(element);
